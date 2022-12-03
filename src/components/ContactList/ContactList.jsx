@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { selectContacts } from 'redux/contacts/selectors';
 import { selectFilter } from 'redux/filter/selectors';
 import { Contact } from '../Contact/Contact';
-import { StyledContactList } from './ContactList.styled';
+import { StyledContactList, StyledContact } from './ContactList.styled';
 
 export const ContactList = () => {
   const contacts = useSelector(selectContacts);
@@ -15,9 +15,9 @@ export const ContactList = () => {
   return (
     <StyledContactList>
       {filteredContacts.map(contact => (
-        <li key={contact.id}>
+        <StyledContact key={contact.id}>
           <Contact contact={contact} key={contact.id} />{' '}
-        </li>
+        </StyledContact>
       ))}
     </StyledContactList>
   );

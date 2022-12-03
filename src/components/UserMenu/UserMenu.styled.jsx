@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledUserMenu = styled.div`
-  font-family: cursive;
   text-decoration: none;
 
   cursor: pointer;
@@ -14,4 +13,9 @@ export const StyledUserMenu = styled.div`
   align-items: center;
   min-width: 65px;
   min-height: 35px;
+`;
+
+export const UserName = styled.span`
+  font-size: 18px;
+  margin-left: 6px;
 `;
