@@ -1,20 +1,18 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
-export const ContactsList = styled.ul`
-  margin: 0 30px 0 40px;
-  padding: 0;
-  list-style: none;
-`;
-
-export const Contact = styled.li`
+export const StyledContainer = styled.div`
+  max-width: 510px;
+  margin-bottom: 8px;
   display: flex;
-  flex-wrap: nowrap;
-
-  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const Name = styled.span`
-  font-size: 20px;
+  font-size: 16px;
   font-weight: semibold;
 `;
 
