@@ -9,6 +9,8 @@ export const StyledForm = styled(Form)`
   margin-bottom: 15px;
 
   align-items: flex-end;
+
+  margin: 0 auto;
 `;
 
 export const ContactFormLabel = styled.label`

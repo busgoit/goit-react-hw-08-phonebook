@@ -31,7 +31,7 @@ export const Content = styled.div`
 `;
 
 export const MainHeading = styled.h1`
-  font-size: 32px;
+  font-size: 26px;
 
   text-transform: uppercase;
   margin-top: 0;
